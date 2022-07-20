@@ -1,0 +1,117 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@1,700&display=swap");
+@import './animation.css';
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	font-family: "Barlow Condensed", sans-serif;
+}
+
+body {
+	margin: 0;
+}
+
+.container {
+	width: 300px;
+	height: 600px;
+	margin: 0 auto;
+
+	overflow: hidden;
+}
+
+.sneakers {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	width: 300px;
+	height: 600px;
+
+	transition: transform 0.3s ease;
+}
+
+.sneakers__item {
+	width: 100%;
+	height: 100%;
+
+	background: rgb(245,245,245);
+	background: linear-gradient(0deg, rgba(245,245,245,1) 0%, rgba(171,171,171,1) 40%, rgba(245,245,245,1) 100%);
+}
+
+.sneakers__link {
+	width: inherit;
+	height: inherit;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-decoration: none;
+
+}
+
+.sneakers__logo {
+	width: 98px;
+	margin: 30px 0 0;
+}
+
+.sneakers__img {
+	width: 300px;
+
+	transform: translateY(-39px);
+}
+
+.sneakers__model {
+	margin: 75px 0 0;
+	color: #111111;
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 120%;
+	text-align: center;
+}
+
+.sneakers__price {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	width: 109px;
+	height: 39px;
+
+	font-weight: 700;
+	font-size: 24px;
+	line-height: 120%;
+	color: #fff;
+
+	background: #FF0000;
+	border-radius: 3px;
+
+	transform: translateY(30px);
+}
+
+.sneakers__button {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	text-transform: uppercase;
+	color: #fff;
+	padding: 4px 24px 8px;
+
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 120%;
+
+	width: 188px;
+	height: 50px;
+
+	background: #111111;
+	border-radius: 3px;
+
+	transition: transform 0.5s ease;
+
+	animation-name: zoomInOutButton;
+	animation-duration: 1.5s;
+	animation-iteration-count: infinite;
+}

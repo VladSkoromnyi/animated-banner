@@ -1,0 +1,13 @@
+@keyframes zoomInOutButton {
+  from {
+		transform: translateY(-40px);
+  }
+
+  to {
+		transform: translateY(-40px);
+  }
+
+  50% {
+		transform: translateY(-20px);
+  }
+}
